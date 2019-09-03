@@ -18,7 +18,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.26,
     backgroundColor: "white",
     elevation: 8,
-    padding: 20,
-    alignItems: "center"
+    paddingVertical: 20,
+    paddingHorizontal: 10,
+    marginBottom: 20
   }
 });
