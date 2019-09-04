@@ -14,6 +14,7 @@ import Card from "../components/Card";
 import Input from "../components/Input";
 import NumberContainer from "../components/NumberContainer";
 import Color from "../constants/colors";
+import Title from "../components/Title";
 
 const StartGameScreen = props => {
   const [enteredValue, setEnteredValue] = useState("");
@@ -67,7 +68,7 @@ const StartGameScreen = props => {
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <View style={styles.screen}>
-        <Text style={styles.screenTitle}>Start a New Game!</Text>
+        <Title style={styles.screenTitle}>Start a New Game!</Title>
         <Card style={styles.inputContainer}>
           <Text>Select a Number:</Text>
           <Input
@@ -114,7 +115,6 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   screenTitle: {
-    fontSize: 22,
     marginBottom: 20
   },
   input: {
